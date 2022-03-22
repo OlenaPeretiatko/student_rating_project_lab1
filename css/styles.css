@@ -76,7 +76,7 @@ label {
 }
 
 #profile {
-    background: url("../img/profileImg.png") center;
+    background: url('https://olenaperetiatko.github.io/bank_project_lab_1/img/profileImg.png') center;
     background-size: cover;
     height: 600px;
 }

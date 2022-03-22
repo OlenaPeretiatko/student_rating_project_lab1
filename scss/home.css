@@ -1,0 +1,19 @@
+#img {
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) cover, url("https://olenaperetiatko.github.io/student_rating_project_lab1/img/background-1.jpg") center;
+  height: 750px; }
+
+.textWhite {
+  font-size: 30px;
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Playfair Display', sans-serif; }
+
+.getStudents {
+  margin: auto; }
+
+/*# sourceMappingURL=home.css.map */

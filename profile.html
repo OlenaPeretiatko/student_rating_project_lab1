@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a>
+            <li><a href="users.html">Users</a></li>
+            <li class="right"><a href="login.html">Login</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li class="right active"><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="content" id="profile">
+    <div>
+    <h2>Profile</h2>
+    <p>Username: {{ user.username }}</p>
+    <p>First Name: {{user.first_name}}</p>
+    <p>Last Name: {{user.last_name}}</p>
+    <p>Phone: {{user.phone}}</p>
+    <p>Email: {{user.email}}</p>
+    <button><a href="edit.html">Edit</a></button>
+    <button class="myBtn"><a href="logout">Logout</a></button>
+    </div>
+</main>
+<footer>
+    <hr>
+    <span>&copy; 2022 Olena Peretiatko</span>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">Users</a>
+        <a href="#">Students</a>
+    </nav>
+</footer>
+</body>
+</html>

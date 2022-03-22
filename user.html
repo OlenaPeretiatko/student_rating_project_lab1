@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a>
+            <li class="active"><a href="users.html">Users</a></li>
+            <li class="right"><a href="login.html">Login</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li class="right"><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="content">
+    {% if current_user.is_admin == False %}
+    <p>Important! You can see information only about your account, as you are not administrator.</p>
+    {% endif %}
+    {% block content %}
+    <h2>{% block title %} {{ user['username'] }} {% endblock %}</h2>
+    <p>First Name: {{user.first_name}}</p>
+    <p>Last Name: {{user.last_name}}</p>
+    <p>Phone: {{user.phone}}</p>
+    <p>Email: {{user.email}}</p>
+    {% endblock %}
+</main>
+</body>
+</html>

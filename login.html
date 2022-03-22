@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a>
+            <li><a href="users.html">Users</a></li>
+            <li class="active"><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="students.html">Students</a></li>
+            <div class="right">
+                <li class="right"><a href="profile.html">Profile</a></li>
+            </div>
+        </ul>
+    </nav>
+</header>
+<main id="login">
+    <div>
+        <h3 class="title">Login</h3>
+
+        <form method="POST" action="/login">
+            <input type="text" name="username" placeholder="Your username" autofocus="">
+            <input type="password" name="password" placeholder="Your Password">
+            <button>Login</button>
+            <p>Don't have account? <a href="register.html">Register</a></p>
+        </form>
+
+    </div>
+</main>
+
+</body>
+</html>
